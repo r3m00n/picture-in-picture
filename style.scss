@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: "Barlow", sans-serif;
+  display: grid;
+  place-items: center;
+  background: url(./picture.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+button {
+  cursor: pointer;
+  font-size: 2rem;
+  height: 3.3rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background: #333;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+  user-select: none;
+
+  &:hover {
+    filter: brightness(120%);
+  }
+
+  &:active {
+    transform: translate(0, 0.3rem);
+  }
+}
